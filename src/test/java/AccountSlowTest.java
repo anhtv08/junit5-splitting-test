@@ -1,7 +1,7 @@
 
 import category.UatTest;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.testng.Assert;
 @UatTest
 class AccountSlowTest {
 
@@ -12,7 +12,7 @@ class AccountSlowTest {
         account= new Account(100);
         System.out.println("in slow test");
 
-        Assert.assertEquals(80,account.withdrawSlow(10));
+        Assertions.assertEquals(90,account.withdrawSlow(10));
         System.out.println("completed slow test");
 
     }
