@@ -1,11 +1,11 @@
+import category.UnitTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 import static org.testng.Assert.assertEquals;
 
-@Tag("fast")
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@UnitTest
 class AccountFastTest {
 
     Account account;

@@ -1,11 +1,9 @@
 
+import category.UatTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 import org.testng.Assert;
-
-@Tag("slow")
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@UatTest
 class AccountSlowTest {
 
     Account account;
