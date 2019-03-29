@@ -61,9 +61,7 @@
         <profile>
             <id>testAll</id>
             <build>
-
                 <plugins>
-
                     <plugin>
                         <artifactId>maven-compiler-plugin</artifactId>
                         <version>3.1</version>
@@ -75,6 +73,11 @@
                     <plugin>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>2.19</version>
+                        <configuration>
+                            <includes>
+                                <include>**/*Test*</include>
+                            </includes>
+                        </configuration>
                         <dependencies>
                             <dependency>
                                 <groupId>org.junit.platform</groupId>
@@ -117,7 +120,6 @@
                     </plugin>
                 </plugins>
             </build>
-
         </profile>
 
         <profile>
@@ -154,9 +156,7 @@
                     </plugin>
                 </plugins>
             </build>
-
         </profile>
-
     </profiles>
 
 </project>
