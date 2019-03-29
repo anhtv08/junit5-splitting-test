@@ -21,7 +21,7 @@ public class Account {
         }
     }
     public int topUp(int amount){
-        if (amount < 0) throw new InvalidInput();
+        if (amount < 0) throw new InvalidInput("Topup amount must be a positive number");
             balance = balance + amount;
         return balance;
     }
